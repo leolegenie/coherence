@@ -637,6 +637,19 @@ function createRoutes(){
             component: loadPage('coherence-grpc-README', '/coherence-grpc/README', {})
         },
         {
+            path: '/plugins/gradle/README',
+            meta: {
+                h1: 'POF Gradle Plugin',
+                title: 'POF Gradle Plugin',
+                h1Prefix: null,
+                description: null,
+                keywords: null,
+                customLayout: null,
+                hasNav: false
+            },
+            component: loadPage('plugins-gradle-README', '/plugins/gradle/README', {})
+        },
+        {
             path: '/coherence-mp/metrics/README',
             meta: {
                 h1: 'Coherence MicroProfile Metrics',
