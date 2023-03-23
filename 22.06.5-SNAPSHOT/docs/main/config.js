@@ -65,6 +65,58 @@ function createRoutes(){
             component: loadPage('docs-about-03_quickstart', '/docs/about/03_quickstart', {})
         },
         {
+            path: '/docs/core/01_overview',
+            meta: {
+                h1: 'Overview',
+                title: 'Overview',
+                h1Prefix: null,
+                description: 'Coherence Core Improvements',
+                keywords: 'coherence, java, documentation',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('docs-core-01_overview', '/docs/core/01_overview', {})
+        },
+        {
+            path: '/docs/core/02_topics',
+            meta: {
+                h1: 'Topics Management',
+                title: 'Topics Management',
+                h1Prefix: null,
+                description: 'Coherence Core Improvements',
+                keywords: 'coherence, java, documentation',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('docs-core-02_topics', '/docs/core/02_topics', {})
+        },
+        {
+            path: '/docs/core/03_microprofile_health',
+            meta: {
+                h1: 'Microprofile Health',
+                title: 'Microprofile Health',
+                h1Prefix: null,
+                description: 'Coherence Core Improvements',
+                keywords: 'coherence, java, documentation',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('docs-core-03_microprofile_health', '/docs/core/03_microprofile_health', {})
+        },
+        {
+            path: '/docs/core/04_gradle',
+            meta: {
+                h1: 'Gradle POF Plugin',
+                title: 'Gradle POF Plugin',
+                h1Prefix: null,
+                description: 'Coherence Core Improvements',
+                keywords: 'coherence, java, documentation',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('docs-core-04_gradle', '/docs/core/04_gradle', {})
+        },
+        {
             path: '/coherence-docker/README',
             meta: {
                 h1: 'Coherence OCI Image',
@@ -390,19 +442,6 @@ function createRoutes(){
             component: loadPage('examples-tutorials-500-graphql-README', '/examples/tutorials/500-graphql/README', {})
         },
         {
-            path: '/coherence-helidon-grpc-proxy/README',
-            meta: {
-                h1: 'Helidon MP gRPC Server',
-                title: 'Helidon MP gRPC Server',
-                h1Prefix: null,
-                description: null,
-                keywords: null,
-                customLayout: null,
-                hasNav: false
-            },
-            component: loadPage('coherence-helidon-grpc-proxy-README', '/coherence-helidon-grpc-proxy/README', {})
-        },
-        {
             path: '/coherence-mp/health/README',
             meta: {
                 h1: 'Coherence MicroProfile Health',
@@ -414,19 +453,6 @@ function createRoutes(){
                 hasNav: false
             },
             component: loadPage('coherence-mp-health-README', '/coherence-mp/health/README', {})
-        },
-        {
-            path: '/examples/internal/template/README',
-            meta: {
-                h1: 'Title',
-                title: 'Title',
-                h1Prefix: null,
-                description: 'Coherence Guides',
-                keywords: 'coherence, java, documentation, guides',
-                customLayout: null,
-                hasNav: false
-            },
-            component: loadPage('examples-internal-template-README', '/examples/internal/template/README', {})
         },
         {
             path: '/coherence-mp/README',
@@ -466,19 +492,6 @@ function createRoutes(){
                 hasNav: false
             },
             component: loadPage('examples-internal-includes-simple-build', '/examples/internal/includes/simple-build', {})
-        },
-        {
-            path: '/coherence-grpc/README',
-            meta: {
-                h1: 'Coherence gRPC',
-                title: 'Coherence gRPC',
-                h1Prefix: null,
-                description: null,
-                keywords: null,
-                customLayout: null,
-                hasNav: false
-            },
-            component: loadPage('coherence-grpc-README', '/coherence-grpc/README', {})
         },
         {
             path: '/coherence-concurrent/README',
@@ -533,19 +546,6 @@ function createRoutes(){
             component: loadPage('docs-README', '/docs/README', {})
         },
         {
-            path: '/examples/internal/includes/what-you-need',
-            meta: {
-                h1: 'What You Need',
-                title: 'What You Need',
-                h1Prefix: null,
-                description: null,
-                keywords: null,
-                customLayout: null,
-                hasNav: false
-            },
-            component: loadPage('examples-internal-includes-what-you-need', '/examples/internal/includes/what-you-need', {})
-        },
-        {
             path: '/coherence-cdi-server/README',
             meta: {
                 h1: 'Coherence CDI',
@@ -557,6 +557,71 @@ function createRoutes(){
                 hasNav: false
             },
             component: loadPage('coherence-cdi-server-README', '/coherence-cdi-server/README', {})
+        },
+        {
+            path: '/coherence-micrometer/README',
+            meta: {
+                h1: 'Coherence Micrometer Metrics',
+                title: 'Coherence Micrometer Metrics',
+                h1Prefix: null,
+                description: null,
+                keywords: null,
+                customLayout: null,
+                hasNav: false
+            },
+            component: loadPage('coherence-micrometer-README', '/coherence-micrometer/README', {})
+        },
+        {
+            path: '/coherence-helidon-grpc-proxy/README',
+            meta: {
+                h1: 'Helidon MP gRPC Server',
+                title: 'Helidon MP gRPC Server',
+                h1Prefix: null,
+                description: null,
+                keywords: null,
+                customLayout: null,
+                hasNav: false
+            },
+            component: loadPage('coherence-helidon-grpc-proxy-README', '/coherence-helidon-grpc-proxy/README', {})
+        },
+        {
+            path: '/examples/internal/template/README',
+            meta: {
+                h1: 'Title',
+                title: 'Title',
+                h1Prefix: null,
+                description: 'Coherence Guides',
+                keywords: 'coherence, java, documentation, guides',
+                customLayout: null,
+                hasNav: false
+            },
+            component: loadPage('examples-internal-template-README', '/examples/internal/template/README', {})
+        },
+        {
+            path: '/coherence-grpc/README',
+            meta: {
+                h1: 'Coherence gRPC',
+                title: 'Coherence gRPC',
+                h1Prefix: null,
+                description: null,
+                keywords: null,
+                customLayout: null,
+                hasNav: false
+            },
+            component: loadPage('coherence-grpc-README', '/coherence-grpc/README', {})
+        },
+        {
+            path: '/examples/internal/includes/what-you-need',
+            meta: {
+                h1: 'What You Need',
+                title: 'What You Need',
+                h1Prefix: null,
+                description: null,
+                keywords: null,
+                customLayout: null,
+                hasNav: false
+            },
+            component: loadPage('examples-internal-includes-what-you-need', '/examples/internal/includes/what-you-need', {})
         },
         {
             path: '/coherence-mp/metrics/README',
@@ -583,19 +648,6 @@ function createRoutes(){
                 hasNav: false
             },
             component: loadPage('examples-setup-intellij', '/examples/setup/intellij', {})
-        },
-        {
-            path: '/coherence-micrometer/README',
-            meta: {
-                h1: 'Coherence Micrometer Metrics',
-                title: 'Coherence Micrometer Metrics',
-                h1Prefix: null,
-                description: null,
-                keywords: null,
-                customLayout: null,
-                hasNav: false
-            },
-            component: loadPage('coherence-micrometer-README', '/coherence-micrometer/README', {})
         },
         {
             path: '/coherence-mp/config/README',
@@ -641,6 +693,17 @@ function createNav(){
                                 { href: '/docs/about/01_overview', title: 'Overview' },
                                 { href: '/docs/about/02_introduction', title: 'Introduction' },
                                 { href: '/docs/about/03_quickstart', title: 'Quick Start' }
+                            ]
+                        },
+                        {
+                            title: 'Core Improvements',
+                            action: 'fa-cubes',
+                            group: '/core',
+                            items: [
+                                { href: '/docs/core/01_overview', title: 'Overview' },
+                                { href: '/docs/core/02_topics', title: 'Topics Management' },
+                                { href: '/docs/core/03_microprofile_health', title: 'Microprofile Health' },
+                                { href: '/docs/core/04_gradle', title: 'Gradle POF Plugin' }
                             ]
                         },
                         {
