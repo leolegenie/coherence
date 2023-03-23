@@ -117,6 +117,19 @@ function createRoutes(){
             component: loadPage('docs-core-04_gradle', '/docs/core/04_gradle', {})
         },
         {
+            path: '/docs/core/05_response_caching',
+            meta: {
+                h1: 'CDI Response Caching',
+                title: 'CDI Response Caching',
+                h1Prefix: null,
+                description: 'Coherence Core Improvements',
+                keywords: 'coherence, java, documentation',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('docs-core-05_response_caching', '/docs/core/05_response_caching', {})
+        },
+        {
             path: '/coherence-docker/README',
             meta: {
                 h1: 'Coherence OCI Image',
@@ -375,6 +388,19 @@ function createRoutes(){
                 hasNav: true
             },
             component: loadPage('examples-guides-460-topics-README', '/examples/guides/460-topics/README', {})
+        },
+        {
+            path: '/examples/guides/600-response-caching/README',
+            meta: {
+                h1: 'CDI Response Caching',
+                title: 'CDI Response Caching',
+                h1Prefix: null,
+                description: 'Coherence Guides',
+                keywords: 'coherence, java, documentation, guides',
+                customLayout: null,
+                hasNav: true
+            },
+            component: loadPage('examples-guides-600-response-caching-README', '/examples/guides/600-response-caching/README', {})
         },
         {
             path: '/examples/guides/905-key-association/README',
@@ -703,7 +729,8 @@ function createNav(){
                                 { href: '/docs/core/01_overview', title: 'Overview' },
                                 { href: '/docs/core/02_topics', title: 'Topics Management' },
                                 { href: '/docs/core/03_microprofile_health', title: 'Microprofile Health' },
-                                { href: '/docs/core/04_gradle', title: 'Gradle POF Plugin' }
+                                { href: '/docs/core/04_gradle', title: 'Gradle POF Plugin' },
+                                { href: '/docs/core/05_response_caching', title: 'CDI Response Caching' }
                             ]
                         },
                         {
@@ -751,6 +778,7 @@ function createNav(){
                                 { href: '/examples/guides/200-federation/README', title: 'Federation' },
                                 { href: '/examples/guides/210-ssl/README', title: 'Securing with SSL' },
                                 { href: '/examples/guides/460-topics/README', title: 'Topics' },
+                                { href: '/examples/guides/600-response-caching/README', title: 'CDI Response Caching' },
                                 { href: '/examples/guides/905-key-association/README', title: 'Key Association' },
                                 { href: '/examples/guides/910-multi-cluster-client/README', title: 'Multi-Cluster Client' }
                             ]
