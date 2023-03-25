@@ -1082,7 +1082,7 @@ lang="java"
         BinaryEntry binaryEntry = (BinaryEntry) entry;
         BackingMapContext ctx = binaryEntry.getContext()
                 .getBackingMapContext(CustomerRepository.NOTIFICATIONS_MAP_NAME);
-        Map&lt;ValueExtractor, MapIndex&gt; indexMap = ctx.getIndexMap();
+        Map&lt;ValueExtractor, MapIndex&gt; indexMap = ctx.getIndexMap(binaryEntry.getKeyPartition());
 
         MapIndex&lt;Binary, Notification, String&gt; index = indexMap
                 .get(ValueExtractor.of(NotificationId::getCustomerId).fromKey());
@@ -1097,6 +1097,9 @@ lang="java"
 
         if (region != null &amp;&amp; !region.isBlank())
             {
+            // copy the keys, so we don't modify the underlying index
+            keys = new HashSet&lt;&gt;(keys);
+
             ValueExtractor&lt;NotificationId, String&gt; extractor = ValueExtractor.of(NotificationId::getRegion).fromKey();
             EqualsFilter&lt;NotificationId, String&gt; filter = new EqualsFilter&lt;&gt;(extractor, region);
             filter.applyIndex(indexMap, keys);
